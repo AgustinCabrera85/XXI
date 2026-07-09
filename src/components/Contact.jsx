@@ -29,7 +29,7 @@ function Contact() {
             <MessageCircle size={22} />
             <div>
               <span>WhatsApp</span>
-              <strong>+54 9 11 7606-5791</strong>
+              <strong>{siteConfig.whatsappDisplay}</strong>
             </div>
           </article>
 
@@ -55,8 +55,9 @@ function Contact() {
           <article>
             <MapPin size={22} />
             <div>
-              <span>Ubicación</span>
+              <span>Retiro</span>
               <strong>{siteConfig.location}</strong>
+              <small>{siteConfig.pickupHours}</small>
             </div>
           </article>
         </div>

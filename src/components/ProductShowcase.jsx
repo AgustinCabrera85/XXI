@@ -9,8 +9,8 @@ function ProductShowcase() {
           <span className="eyebrow">Modelos</span>
           <h2>Algunos iPhones para tener como referencia.</h2>
           <p>
-            Esta sección no publica precios ni stock. Su objetivo es mostrar modelos destacados y
-            derivar cada consulta al contacto directo.
+            Mostramos una descripción breve de cada modelo y sus colores. Para consultar stock,
+            disponibilidad o detalles puntuales, cada tarjeta te lleva directo a WhatsApp.
           </p>
         </div>
 

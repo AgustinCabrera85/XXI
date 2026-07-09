@@ -10,8 +10,9 @@ Sitio institucional minimalista para XXI Miami Corp, orientado a la venta de iPh
 - Logo integrado en header, footer y favicon.
 - Imagen horizontal integrada como encabezado / hero.
 - Texto institucional de XXI Miami Corp.
-- Sección de modelos sin precios ni stock.
-- Sección de contacto con WhatsApp, Instagram, email y ubicación.
+- Sección de información útil con formas de pago, retiro y parte de pago.
+- Sección de modelos sin precios ni stock, con colores por modelo y consulta directa por WhatsApp.
+- Sección de contacto con WhatsApp, Instagram, email y lugar de retiro.
 - Widget flotante de WhatsApp.
 - Diseño responsive.
 
@@ -28,6 +29,7 @@ src/
     Footer.jsx
     Header.jsx
     Hero.jsx
+    PurchaseInfo.jsx
     ProductCard.jsx
     ProductShowcase.jsx
     WhatsAppWidget.jsx
@@ -100,7 +102,25 @@ mainStatement:
   "XXI Miami Corp no es solo un negocio, es el espacio donde transformamos la búsqueda de tu próximo iPhone en algo especial.",
 ```
 
-## Configurar modelos
+## Configurar pagos, retiro y parte de pago
+
+Editar el archivo:
+
+```txt
+src/data/siteConfig.js
+```
+
+Ahí podés modificar:
+
+```js
+paymentMethods: ["Efectivo en pesos", "Dólar en mano", "Transferencia", "Tarjeta de crédito"],
+paymentNote: "No pedimos pago por adelantado.",
+location: "Juana Manso 1161, Puerto Madero",
+pickupHours: "Lunes a sábados de 10 a 19 hs",
+tradeInText: "Tomamos equipos en parte de pago del iPhone 12 en adelante.",
+```
+
+## Configurar modelos y colores
 
 Editar el archivo:
 
@@ -108,7 +128,7 @@ Editar el archivo:
 src/data/iphones.js
 ```
 
-Ahí podés agregar, quitar o modificar modelos sin tocar el componente visual.
+Ahí podés agregar, quitar o modificar modelos, descripciones y colores sin tocar el componente visual. Cada modelo tiene un array `colors` con `name` y `hex` para mostrar los circulitos de color.
 
 ## Cambiar logo o imagen de encabezado
 

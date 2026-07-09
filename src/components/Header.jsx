@@ -13,6 +13,7 @@ function Header() {
 
         <nav className="nav" aria-label="Navegación principal">
           <a href="#about">Nosotros</a>
+          <a href="#purchase-info">Info útil</a>
           <a href="#models">Modelos</a>
           <a href="#contact">Contacto</a>
         </nav>
