@@ -9,8 +9,8 @@ export const siteConfig = {
   email: "xxicorporative@gmail.com",
   location: "Juana Manso 1161, Puerto Madero",
   pickupHours: "Lunes a sábados de 10 a 19 hs",
-  instagramHandle: "Xxi.miamicorp_",
-  instagramUrl: "https://www.instagram.com/xxi.miamicorp_/",
+  instagramHandle: "xximiami",
+  instagramUrl: "https://www.instagram.com/xximiami/",
   paymentMethods: [
     "Efectivo en pesos",
     "Dólar en mano",
