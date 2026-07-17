@@ -14,7 +14,7 @@ function Hero() {
           <div className="hero-copy hero-copy-card">
             <span className="eyebrow">{siteConfig.tagline}</span>
 
-            <h1>Tu próximo iPhone, con una experiencia especial.</h1>
+            <h1>Tu iPhone ideal, con una experiencia pensada para vos.</h1>
 
             <p>{siteConfig.mainStatement}</p>
 
