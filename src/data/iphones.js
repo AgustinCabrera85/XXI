@@ -5,6 +5,51 @@ import iphone15ProMax from "../assets/products/iphone-15-promax-transparent.png"
 import iphone16ProMax from "../assets/products/iphone-16-promax-transparent.png";
 import iphone17Pro from "../assets/products/iphone-17-pro-5-transparent.png";
 
+const colors = {
+  black: { name: "Negro", hex: "#1f2020" },
+  white: { name: "Blanco", hex: "#f5f4ef" },
+  blue: { name: "Azul", hex: "#2f506c" },
+  green: { name: "Verde", hex: "#d7e9d5" },
+  purple: { name: "Morado", hex: "#c9b6dc" },
+  productRed: { name: "Product RED", hex: "#b91f2c" },
+
+  pacificBlue: { name: "Azul Pacífico", hex: "#40576a" },
+  graphite: { name: "Grafito", hex: "#4b4a46" },
+  silver: { name: "Plata", hex: "#f2f3ef" },
+  gold: { name: "Oro", hex: "#f3dfc3" },
+
+  midnight: { name: "Medianoche", hex: "#1f2328" },
+  starlight: { name: "Blanco Estelar", hex: "#f6f1e7" },
+  pink: { name: "Rosa", hex: "#f3c8cf" },
+  sierraBlue: { name: "Azul Sierra", hex: "#a7bdd1" },
+  alpineGreen: { name: "Verde Alpino", hex: "#57675d" },
+
+  yellow: { name: "Amarillo", hex: "#f4e8bd" },
+  deepPurple: { name: "Deep Purple", hex: "#594f63" },
+  spaceBlack: { name: "Negro Espacial", hex: "#403e3d" },
+  goldEnglish: { name: "Gold", hex: "#f4e8ce" },
+
+  titaniumNatural: { name: "Titanio Natural", hex: "#c9c2b8" },
+  titaniumBlue: { name: "Titanio Azul", hex: "#3f4e5f" },
+  titaniumWhite: { name: "Titanio Blanco", hex: "#f1efea" },
+  titaniumBlack: { name: "Titanio Negro", hex: "#3b3936" },
+  titaniumDesert: { name: "Titanio Desierto", hex: "#d8bfa8" },
+
+  ultramarine: { name: "Ultramar", hex: "#6f7fbf" },
+  teal: { name: "Verde Azulado", hex: "#98c8c0" },
+
+  lavender: { name: "Lavanda", hex: "#c9b7e8" },
+  mistBlue: { name: "Azul Neblina", hex: "#c8d8e5" },
+  sageGreen: { name: "Verde Salvia", hex: "#b7c8b1" },
+
+  skyBlue: { name: "Azul Cielo", hex: "#bfd8ea" },
+  lightGold: { name: "Dorado Claro", hex: "#ead9b8" },
+  cloudWhite: { name: "Blanco Nube", hex: "#f4f3ef" },
+
+  cosmicOrange: { name: "Naranja Cósmico", hex: "#d96832" },
+  deepBlue: { name: "Azul Profundo", hex: "#243646" },
+};
+
 export const iphones = [
   {
     id: 5,
@@ -14,15 +59,45 @@ export const iphones = [
     tone: "white",
     image: iphone17Pro,
     variants: [
-      { name: "iPhone 17 / 17e", storage: "256 GB, 512 GB" },
-      { name: "iPhone 17 Air", storage: "256 GB, 512 GB, 1 TB" },
-      { name: "iPhone 17 Pro", storage: "256 GB, 512 GB, 1 TB" },
-      { name: "iPhone 17 Pro Max", storage: "256 GB, 512 GB, 1 TB, 2 TB" },
-    ],
-    colors: [
-      { name: "Blanco", hex: "#f4f4f1" },
-      { name: "Negro", hex: "#1e2327" },
-      { name: "Azul profundo", hex: "#243646" },
+      {
+        name: "iPhone 17",
+        storage: "256 GB, 512 GB",
+        colors: [
+          colors.lavender,
+          colors.mistBlue,
+          colors.sageGreen,
+          colors.white,
+          colors.black,
+        ],
+      },
+      {
+        name: "iPhone 17 Air",
+        storage: "256 GB, 512 GB, 1 TB",
+        colors: [
+          colors.skyBlue,
+          colors.lightGold,
+          colors.cloudWhite,
+          colors.spaceBlack,
+        ],
+      },
+      {
+        name: "iPhone 17 Pro",
+        storage: "256 GB, 512 GB, 1 TB",
+        colors: [
+          colors.silver,
+          colors.cosmicOrange,
+          colors.deepBlue,
+        ],
+      },
+      {
+        name: "iPhone 17 Pro Max",
+        storage: "256 GB, 512 GB, 1 TB, 2 TB",
+        colors: [
+          colors.silver,
+          colors.cosmicOrange,
+          colors.deepBlue,
+        ],
+      },
     ],
   },
   {
@@ -33,14 +108,27 @@ export const iphones = [
     tone: "cream",
     image: iphone16ProMax,
     variants: [
-      { name: "iPhone 16 / 16 Plus", storage: "128 GB, 256 GB, 512 GB" },
-      { name: "iPhone 16 Pro / 16 Pro Max", storage: "128 GB, 256 GB, 512 GB, 1 TB" },
-    ],
-    colors: [
-      { name: "Titanio del desierto", hex: "#d8bfa8" },
-      { name: "Titanio natural", hex: "#c9c2b8" },
-      { name: "Titanio blanco", hex: "#f1efea" },
-      { name: "Titanio negro", hex: "#3b3936" },
+      {
+        name: "iPhone 16 / 16 Plus",
+        storage: "128 GB, 256 GB, 512 GB",
+        colors: [
+          colors.ultramarine,
+          colors.teal,
+          colors.pink,
+          colors.white,
+          colors.black,
+        ],
+      },
+      {
+        name: "iPhone 16 Pro / 16 Pro Max",
+        storage: "128 GB, 256 GB, 512 GB, 1 TB",
+        colors: [
+          colors.titaniumBlack,
+          colors.titaniumWhite,
+          colors.titaniumNatural,
+          colors.titaniumDesert,
+        ],
+      },
     ],
   },
   {
@@ -51,14 +139,27 @@ export const iphones = [
     tone: "graphite",
     image: iphone15ProMax,
     variants: [
-      { name: "iPhone 15 / 15 Plus", storage: "128 GB, 256 GB, 512 GB" },
-      { name: "iPhone 15 Pro / 15 Pro Max", storage: "128 GB, 256 GB, 512 GB, 1 TB" },
-    ],
-    colors: [
-      { name: "Titanio natural", hex: "#c9c2b8" },
-      { name: "Titanio azul", hex: "#3f4e5f" },
-      { name: "Titanio blanco", hex: "#f1efea" },
-      { name: "Titanio negro", hex: "#3b3936" },
+      {
+        name: "iPhone 15 / 15 Plus",
+        storage: "128 GB, 256 GB, 512 GB",
+        colors: [
+          colors.black,
+          colors.blue,
+          colors.green,
+          colors.yellow,
+          colors.pink,
+        ],
+      },
+      {
+        name: "iPhone 15 Pro / 15 Pro Max",
+        storage: "128 GB, 256 GB, 512 GB, 1 TB",
+        colors: [
+          colors.titaniumNatural,
+          colors.titaniumBlue,
+          colors.titaniumWhite,
+          colors.titaniumBlack,
+        ],
+      },
     ],
   },
   {
@@ -69,14 +170,28 @@ export const iphones = [
     tone: "sand",
     image: iphone14ProMax,
     variants: [
-      { name: "iPhone 14 / 14 Plus", storage: "128 GB, 256 GB, 512 GB" },
-      { name: "iPhone 14 Pro / 14 Pro Max", storage: "128 GB, 256 GB, 512 GB, 1 TB" },
-    ],
-    colors: [
-      { name: "Morado oscuro", hex: "#594f63" },
-      { name: "Oro", hex: "#f4e8ce" },
-      { name: "Plata", hex: "#f2f3ef" },
-      { name: "Negro espacial", hex: "#403e3d" },
+      {
+        name: "iPhone 14 / 14 Plus",
+        storage: "128 GB, 256 GB, 512 GB",
+        colors: [
+          colors.midnight,
+          colors.purple,
+          colors.starlight,
+          colors.productRed,
+          colors.blue,
+          colors.yellow,
+        ],
+      },
+      {
+        name: "iPhone 14 Pro / 14 Pro Max",
+        storage: "128 GB, 256 GB, 512 GB, 1 TB",
+        colors: [
+          colors.deepPurple,
+          colors.spaceBlack,
+          colors.silver,
+          colors.goldEnglish,
+        ],
+      },
     ],
   },
   {
@@ -87,39 +202,60 @@ export const iphones = [
     tone: "blue",
     image: iphone13ProMax,
     variants: [
-      { name: "iPhone 13 / 13 mini", storage: "128 GB, 256 GB, 512 GB" },
-      { name: "iPhone 13 Pro / 13 Pro Max", storage: "128 GB, 256 GB, 512 GB, 1 TB" },
-    ],
-    colors: [
-      { name: "Azul Sierra", hex: "#a7bdd1" },
-      { name: "Grafito", hex: "#54524f" },
-      { name: "Oro", hex: "#f4e8ce" },
-      { name: "Plata", hex: "#f2f3ef" },
-      { name: "Verde alpino", hex: "#57675d" },
+      {
+        name: "iPhone 13 / 13 mini",
+        storage: "128 GB, 256 GB, 512 GB",
+        colors: [
+          colors.midnight,
+          colors.starlight,
+          colors.pink,
+          colors.green,
+          colors.productRed,
+        ],
+      },
+      {
+        name: "iPhone 13 Pro / 13 Pro Max",
+        storage: "128 GB, 256 GB, 512 GB, 1 TB",
+        colors: [
+          colors.graphite,
+          colors.silver,
+          colors.gold,
+          colors.sierraBlue,
+          colors.alpineGreen,
+        ],
+      },
     ],
   },
   {
-  id: 0,
-  name: "iPhone 12",
-  description:
-    "Una línea muy buscada por su diseño moderno, buen rendimiento y excelente equilibrio entre calidad, cámara y experiencia diaria.",
-  tone: "silver",
-  image: iphone12ProMax,
-  variants: [
-    { name: "iPhone 12 / 12 mini", storage: "64 GB, 128 GB, 256 GB" },
-    { name: "iPhone 12 Pro / 12 Pro Max", storage: "128 GB, 256 GB, 512 GB" },
-  ],
-  colors: [
-    { name: "Negro", hex: "#1f2020" },
-    { name: "Blanco", hex: "#f5f4ef" },
-    { name: "Rojo", hex: "#b91f2c" },
-    { name: "Verde", hex: "#d7e9d5" },
-    { name: "Azul", hex: "#2f506c" },
-    { name: "Morado", hex: "#c9b6dc" },
-    { name: "Grafito", hex: "#4b4a46" },
-    { name: "Plata", hex: "#f2f3ef" },
-    { name: "Oro", hex: "#f3dfc3" },
-    { name: "Azul pacífico", hex: "#40576a" },
+    id: 0,
+    name: "iPhone 12",
+    description:
+      "Una línea muy buscada por su diseño moderno, buen rendimiento y excelente equilibrio entre calidad, cámara y experiencia diaria.",
+    tone: "silver",
+    image: iphone12ProMax,
+    variants: [
+      {
+        name: "iPhone 12 / 12 mini",
+        storage: "64 GB, 128 GB, 256 GB",
+        colors: [
+          colors.black,
+          colors.white,
+          colors.blue,
+          colors.green,
+          colors.purple,
+          colors.productRed,
+        ],
+      },
+      {
+        name: "iPhone 12 Pro / 12 Pro Max",
+        storage: "128 GB, 256 GB, 512 GB",
+        colors: [
+          colors.pacificBlue,
+          colors.graphite,
+          colors.silver,
+          colors.gold,
+        ],
+      },
     ],
-  }
+  },
 ];
