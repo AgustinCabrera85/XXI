@@ -1,3 +1,4 @@
+import iphone12ProMax from "../assets/products/IPHONE-12-PRO-MAX-SILVER-FRONT.png";
 import iphone13ProMax from "../assets/products/iphone-13-promax-transparent.png";
 import iphone14ProMax from "../assets/products/iphone-14-promax-transparent.png";
 import iphone15ProMax from "../assets/products/iphone-15-promax-transparent.png";
@@ -97,4 +98,28 @@ export const iphones = [
       { name: "Verde alpino", hex: "#57675d" },
     ],
   },
+  {
+  id: 0,
+  name: "iPhone 12",
+  description:
+    "Una línea muy buscada por su diseño moderno, buen rendimiento y excelente equilibrio entre calidad, cámara y experiencia diaria.",
+  tone: "silver",
+  image: iphone12ProMax,
+  variants: [
+    { name: "iPhone 12 / 12 mini", storage: "64 GB, 128 GB, 256 GB" },
+    { name: "iPhone 12 Pro / 12 Pro Max", storage: "128 GB, 256 GB, 512 GB" },
+  ],
+  colors: [
+    { name: "Negro", hex: "#1f2020" },
+    { name: "Blanco", hex: "#f5f4ef" },
+    { name: "Rojo", hex: "#b91f2c" },
+    { name: "Verde", hex: "#d7e9d5" },
+    { name: "Azul", hex: "#2f506c" },
+    { name: "Morado", hex: "#c9b6dc" },
+    { name: "Grafito", hex: "#4b4a46" },
+    { name: "Plata", hex: "#f2f3ef" },
+    { name: "Oro", hex: "#f3dfc3" },
+    { name: "Azul pacífico", hex: "#40576a" },
+    ],
+  }
 ];
