@@ -142,3 +142,18 @@ src/assets/hero-header.jpg
 ## Nota legal / marca
 
 Este sitio usa referencias a iPhone solo para describir productos. Conviene evitar que el diseño parezca un sitio oficial de Apple, salvo que el cliente cuente con autorización correspondiente.
+
+
+## Imágenes de productos
+
+Las tarjetas de modelos usan imágenes PNG con fondo transparente en:
+
+```txt
+src/assets/products/
+```
+
+Los modelos, descripciones, colores e imagen asociada se configuran en:
+
+```txt
+src/data/iphones.js
+```

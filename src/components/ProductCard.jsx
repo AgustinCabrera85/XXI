@@ -9,12 +9,8 @@ function ProductCard({ iphone }) {
 
   return (
     <article className={`product-card product-card-${iphone.tone}`}>
-      <div className="product-visual" aria-hidden="true">
-        <div className="product-phone">
-          <div className="product-camera camera-one" />
-          <div className="product-camera camera-two" />
-          <div className="product-camera camera-three" />
-        </div>
+      <div className="product-visual">
+        <img className="product-image" src={iphone.image} alt={iphone.name} loading="lazy" />
       </div>
 
       <div className="product-info">
