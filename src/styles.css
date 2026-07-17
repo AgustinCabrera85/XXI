@@ -351,7 +351,11 @@ img {
 }
 
 .product-card {
+  position: relative;
+  isolation: isolate;
   overflow: hidden;
+  display: grid;
+  grid-template-rows: auto 1fr;
   border-radius: var(--radius-xl);
   background: var(--color-white);
   border: 1px solid rgba(93, 70, 54, 0.08);
@@ -365,7 +369,10 @@ img {
 }
 
 .product-visual {
+  position: relative;
+  z-index: 1;
   height: 280px;
+  overflow: hidden;
   display: grid;
   place-items: center;
   padding: 20px;
@@ -387,7 +394,10 @@ img {
 }
 
 .product-info {
+  position: relative;
+  z-index: 2;
   padding: 24px;
+  background: var(--color-white);
 }
 
 .product-info h3 {
@@ -567,7 +577,16 @@ img {
   }
 
   .product-visual {
-    height: 260px;
+    height: 240px;
+    align-items: start;
+    padding: 26px 18px 0;
+  }
+
+  .product-image {
+    width: min(82%, 330px);
+    height: auto;
+    max-height: none;
+    object-position: center top;
   }
 }
 
@@ -614,7 +633,13 @@ img {
   }
 
   .product-visual {
-    height: 300px;
+    height: 230px;
+    align-items: start;
+    padding-top: 24px;
+  }
+
+  .product-image {
+    width: min(78%, 310px);
   }
 
   .contact-card {
@@ -648,6 +673,14 @@ img {
 
   .button {
     width: 100%;
+  }
+
+  .product-visual {
+    height: 210px;
+  }
+
+  .product-image {
+    width: min(82%, 280px);
   }
 
   .contact-details article {
