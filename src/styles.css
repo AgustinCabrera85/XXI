@@ -346,7 +346,7 @@ img {
 
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 22px;
 }
 
@@ -396,6 +396,8 @@ img {
 .product-info {
   position: relative;
   z-index: 2;
+  display: flex;
+  flex-direction: column;
   padding: 24px;
   background: var(--color-white);
 }
@@ -408,11 +410,61 @@ img {
 }
 
 .product-info p {
-  min-height: 76px;
   margin: 0 0 20px;
   color: var(--color-gray);
   font-size: 0.94rem;
   line-height: 1.62;
+}
+
+.product-variants {
+  margin: 0 0 20px;
+  padding: 16px 0 18px;
+  border-top: 1px solid rgba(93, 70, 54, 0.08);
+  border-bottom: 1px solid rgba(93, 70, 54, 0.08);
+}
+
+.details-label {
+  display: block;
+  margin-bottom: 12px;
+  color: var(--color-gray);
+  font-size: 0.78rem;
+  font-weight: 850;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.variant-list {
+  display: grid;
+  gap: 0;
+}
+
+.variant-row {
+  display: grid;
+  gap: 4px;
+  padding: 10px 0;
+  border-top: 1px solid rgba(93, 70, 54, 0.07);
+}
+
+.variant-row:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.variant-row:last-child {
+  padding-bottom: 0;
+}
+
+.variant-name {
+  color: var(--color-dark-brown);
+  font-size: 0.93rem;
+  font-weight: 850;
+  line-height: 1.35;
+}
+
+.variant-storage {
+  color: var(--color-gray);
+  font-size: 0.9rem;
+  line-height: 1.45;
 }
 
 .product-link {
@@ -420,6 +472,7 @@ img {
   align-items: center;
   gap: 8px;
   color: var(--color-brown);
+  margin-top: auto;
   font-size: 0.92rem;
   font-weight: 850;
 }
@@ -845,7 +898,17 @@ img {
   .color-dots {
     justify-content: flex-start;
   }
+
+  .variant-row {
+    gap: 5px;
+  }
+
+  .variant-name,
+  .variant-storage {
+    font-size: 0.9rem;
+  }
 }
+
 
 .contact-details small {
   display: block;

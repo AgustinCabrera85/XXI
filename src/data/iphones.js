@@ -7,11 +7,17 @@ import iphone17Pro from "../assets/products/iphone-17-pro-5-transparent.png";
 export const iphones = [
   {
     id: 5,
-    name: "iPhone 17 Pro",
+    name: "iPhone 17",
     description:
-      "Una alternativa de nueva generación, con diseño elegante, gran fluidez y prestaciones pensadas para quienes buscan lo último.",
+      "La línea más nueva, pensada para quienes buscan máxima fluidez, almacenamiento amplio y prestaciones de última generación.",
     tone: "white",
     image: iphone17Pro,
+    variants: [
+      { name: "iPhone 17 / 17e", storage: "256 GB, 512 GB" },
+      { name: "iPhone 17 Air", storage: "256 GB, 512 GB, 1 TB" },
+      { name: "iPhone 17 Pro", storage: "256 GB, 512 GB, 1 TB" },
+      { name: "iPhone 17 Pro Max", storage: "256 GB, 512 GB, 1 TB, 2 TB" },
+    ],
     colors: [
       { name: "Blanco", hex: "#f4f4f1" },
       { name: "Negro", hex: "#1e2327" },
@@ -20,11 +26,15 @@ export const iphones = [
   },
   {
     id: 4,
-    name: "iPhone 16 Pro Max",
+    name: "iPhone 16",
     description:
-      "Un modelo moderno y refinado, con gran rendimiento, pantalla amplia y terminación premium para una experiencia de alta gama.",
+      "Una familia moderna y refinada, con excelente rendimiento, pantalla de gran calidad y opciones Pro para una experiencia de alta gama.",
     tone: "cream",
     image: iphone16ProMax,
+    variants: [
+      { name: "iPhone 16 / 16 Plus", storage: "128 GB, 256 GB, 512 GB" },
+      { name: "iPhone 16 Pro / 16 Pro Max", storage: "128 GB, 256 GB, 512 GB, 1 TB" },
+    ],
     colors: [
       { name: "Titanio del desierto", hex: "#d8bfa8" },
       { name: "Titanio natural", hex: "#c9c2b8" },
@@ -34,11 +44,15 @@ export const iphones = [
   },
   {
     id: 3,
-    name: "iPhone 15 Pro Max",
+    name: "iPhone 15",
     description:
-      "Diseño de titanio, excelente potencia, cámara de alto nivel y una experiencia premium para quienes buscan máxima calidad.",
+      "Una línea potente y muy equilibrada, con modelos Plus y Pro para quienes buscan diseño premium, gran cámara y excelente desempeño.",
     tone: "graphite",
     image: iphone15ProMax,
+    variants: [
+      { name: "iPhone 15 / 15 Plus", storage: "128 GB, 256 GB, 512 GB" },
+      { name: "iPhone 15 Pro / 15 Pro Max", storage: "128 GB, 256 GB, 512 GB, 1 TB" },
+    ],
     colors: [
       { name: "Titanio natural", hex: "#c9c2b8" },
       { name: "Titanio azul", hex: "#3f4e5f" },
@@ -48,11 +62,15 @@ export const iphones = [
   },
   {
     id: 2,
-    name: "iPhone 14 Pro Max",
+    name: "iPhone 14",
     description:
-      "Una opción premium, elegante y sólida, con pantalla amplia, cámara avanzada y muy buen rendimiento para uso intensivo.",
+      "Una opción premium, elegante y sólida, con muy buen rendimiento, cámaras confiables y variantes para distintos estilos de uso.",
     tone: "sand",
     image: iphone14ProMax,
+    variants: [
+      { name: "iPhone 14 / 14 Plus", storage: "128 GB, 256 GB, 512 GB" },
+      { name: "iPhone 14 Pro / 14 Pro Max", storage: "128 GB, 256 GB, 512 GB, 1 TB" },
+    ],
     colors: [
       { name: "Morado oscuro", hex: "#594f63" },
       { name: "Oro", hex: "#f4e8ce" },
@@ -62,11 +80,15 @@ export const iphones = [
   },
   {
     id: 1,
-    name: "iPhone 13 Pro Max",
+    name: "iPhone 13",
     description:
-      "Un modelo confiable y potente, con gran pantalla, excelente autonomía y una experiencia Pro muy completa para el día a día.",
+      "Una línea confiable y potente, con gran autonomía, muy buena pantalla y opciones Pro para quienes buscan una experiencia más completa.",
     tone: "blue",
     image: iphone13ProMax,
+    variants: [
+      { name: "iPhone 13 / 13 mini", storage: "128 GB, 256 GB, 512 GB" },
+      { name: "iPhone 13 Pro / 13 Pro Max", storage: "128 GB, 256 GB, 512 GB, 1 TB" },
+    ],
     colors: [
       { name: "Azul Sierra", hex: "#a7bdd1" },
       { name: "Grafito", hex: "#54524f" },

@@ -2,7 +2,7 @@ import { ArrowUpRight } from "lucide-react";
 import { siteConfig } from "../data/siteConfig";
 
 function ProductCard({ iphone }) {
-  const message = `Hola, quiero consultar por ${iphone.name}. ¿Me podrían informar disponibilidad y detalles?`;
+  const message = `Hola, quiero consultar stock, colores y detalles de ${iphone.name}.`;
   const whatsappUrl = `https://wa.me/${siteConfig.whatsappPhone}?text=${encodeURIComponent(
     message
   )}`;
@@ -16,6 +16,21 @@ function ProductCard({ iphone }) {
       <div className="product-info">
         <h3>{iphone.name}</h3>
         <p>{iphone.description}</p>
+
+        {iphone.variants?.length > 0 && (
+          <div className="product-variants" aria-label={`Variantes y almacenamiento de ${iphone.name}`}>
+            <span className="details-label">Variantes y almacenamiento</span>
+
+            <div className="variant-list">
+              {iphone.variants.map((variant) => (
+                <div className="variant-row" key={variant.name}>
+                  <span className="variant-name">{variant.name}</span>
+                  <span className="variant-storage">{variant.storage}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
 
         <div className="product-colors" aria-label={`Colores de ${iphone.name}`}>
           <span className="colors-label">Colores</span>

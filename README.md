@@ -11,7 +11,7 @@ Sitio institucional minimalista para XXI Miami Corp, orientado a la venta de iPh
 - Imagen horizontal integrada como encabezado / hero.
 - Texto institucional de XXI Miami Corp.
 - Sección de información útil con formas de pago, retiro y parte de pago.
-- Sección de modelos sin precios ni stock, con colores por modelo y consulta directa por WhatsApp.
+- Sección de modelos sin precios ni stock, agrupada por línea de iPhone, con variantes, almacenamiento, colores de referencia y consulta directa por WhatsApp.
 - Sección de contacto con WhatsApp, Instagram, email y lugar de retiro.
 - Widget flotante de WhatsApp.
 - Diseño responsive.
@@ -128,7 +128,7 @@ Editar el archivo:
 src/data/iphones.js
 ```
 
-Ahí podés agregar, quitar o modificar modelos, descripciones y colores sin tocar el componente visual. Cada modelo tiene un array `colors` con `name` y `hex` para mostrar los circulitos de color.
+Ahí podés agregar, quitar o modificar líneas de iPhone, descripciones, variantes, almacenamiento y colores sin tocar el componente visual. Cada línea tiene un array `variants` con `name` y `storage`, y un array `colors` con `name` y `hex` para mostrar los circulitos de color.
 
 ## Cambiar logo o imagen de encabezado
 

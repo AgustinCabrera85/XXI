@@ -7,10 +7,10 @@ function ProductShowcase() {
       <div className="container">
         <div className="section-header">
           <span className="eyebrow">Modelos</span>
-          <h2>Algunos iPhones para tener como referencia.</h2>
+          <h2>Líneas de iPhone para tener como referencia.</h2>
           <p>
-            Mostramos una descripción breve de cada modelo y sus colores. Para consultar stock,
-            disponibilidad o detalles puntuales, cada tarjeta te lleva directo a WhatsApp.
+            Cada tarjeta agrupa variantes de una misma línea, sus opciones de almacenamiento y
+            colores de referencia. Para consultar stock o detalles puntuales, te llevamos directo a WhatsApp.
           </p>
         </div>
 
