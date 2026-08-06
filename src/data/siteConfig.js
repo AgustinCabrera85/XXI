@@ -7,7 +7,7 @@ export const siteConfig = {
   whatsappDisplay: "+54 9 11 7606-5791",
   whatsappMessage: "Hola, quiero consultar por modelos de iPhone.",
   email: "xxicorporative@gmail.com",
-  location: "Juana Manso 1161, Puerto Madero",
+  location: "Juana Manso 1666, Puerto Madero",
   pickupHours: "Lunes a sábados de 10 a 19 hs",
   instagramHandle: "xximiami",
   instagramUrl: "https://www.instagram.com/xximiami/",
