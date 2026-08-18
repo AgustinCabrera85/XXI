@@ -801,7 +801,7 @@ img {
     padding: 8px;
     color: var(--color-dark-brown);
     background: rgba(255, 255, 255, 0.98);
-    border: 1px solid rgba(93, 70, 54, 0.1);
+    border: 1px solid rgba(93, 70, 54, 0.18);
     border-radius: var(--radius-md);
     box-shadow: var(--shadow-soft);
     opacity: 0;
@@ -812,15 +812,15 @@ img {
     transition: opacity 0.22s ease, transform 0.22s ease, visibility 0.22s ease;
   }
 
+  .nav a {
+    padding: 14px 16px;
+  }
+
   .nav.nav-open {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
     transform: translateY(0) scale(1);
-  }
-
-  .nav.nav-open a {
-    padding: 14px 16px;
   }
 
   .nav.nav-open a:hover {
