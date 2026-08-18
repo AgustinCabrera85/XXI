@@ -781,12 +781,51 @@ img {
 }
 
 @media (max-width: 760px) {
+  .header-content {
+    position: relative;
+  }
+
   .section-padding {
     padding: 78px 0;
   }
 
   .nav {
-    display: none;
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    width: min(220px, calc(100vw - 40px));
+    padding: 8px;
+    color: var(--color-dark-brown);
+    background: rgba(255, 255, 255, 0.98);
+    border: 1px solid rgba(93, 70, 54, 0.1);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-soft);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(-8px) scale(0.98);
+    transform-origin: top right;
+    transition: opacity 0.22s ease, transform 0.22s ease, visibility 0.22s ease;
+  }
+
+  .nav.nav-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0) scale(1);
+  }
+
+  .nav.nav-open a {
+    padding: 14px 16px;
+  }
+
+  .nav.nav-open a:hover {
+    background: var(--color-cream);
+    border-radius: 12px;
   }
 
   .menu-button {

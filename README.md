@@ -115,7 +115,7 @@ Ahí podés modificar:
 ```js
 paymentMethods: ["Efectivo en pesos", "Dólar en mano", "Transferencia", "Tarjeta de crédito"],
 paymentNote: "No pedimos pago por adelantado.",
-location: "Juana Manso 1161, Puerto Madero",
+location: "Juana Manso 1666, Puerto Madero",
 pickupHours: "Lunes a sábados de 10 a 19 hs",
 tradeInText: "Tomamos equipos en parte de pago del iPhone 12 en adelante.",
 ```
