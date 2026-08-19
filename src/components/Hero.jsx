@@ -1,37 +1,37 @@
-import { ArrowRight } from "lucide-react";
-import heroImage from "../assets/hero-header.jpg";
-import { siteConfig } from "../data/siteConfig";
+import heroDevice from "../assets/hero-device.jpg";
+import { whatsappMessages, whatsappUrl } from "../data/siteConfig";
+import { Icon } from "./Icons";
 
-function Hero() {
+export default function Hero() {
   return (
-    <section
-      id="home"
-      className="hero hero-with-image"
-      style={{ backgroundImage: `url(${heroImage})` }}
-    >
-      <div className="hero-overlay">
-        <div className="container hero-content hero-content-with-image">
-          <div className="hero-copy hero-copy-card">
-            <span className="eyebrow">{siteConfig.tagline}</span>
-
-            <h1>Tu iPhone ideal, con una experiencia pensada para vos.</h1>
-
-            <p>{siteConfig.mainStatement}</p>
-
-            <div className="hero-actions">
-              <a href="#models" className="button button-primary">
-                Ver modelos
-                <ArrowRight size={18} />
-              </a>
-              <a href="#contact" className="button button-secondary">
-                Contactar
-              </a>
-            </div>
+    <section className="hero" id="home" data-whatsapp-message={whatsappMessages.hero}>
+      <div className="hero-stage shell">
+        <div className="hero-text">
+          <span className="kicker">Experiencia XXI · Puerto Madero</span>
+          <h1>iPhone.<br/>Elegido para vos.</h1>
+          <p>Equipos seleccionados, asesoramiento personal y una experiencia de compra a la altura.</p>
+          <div className="hero-actions">
+            <a className="primary-cta" href="#collection">
+              <span>Explorar colección</span><Icon name="arrow" size={18}/>
+            </a>
+            <a className="text-cta" href={whatsappUrl(whatsappMessages.hero)} target="_blank" rel="noreferrer">
+              Hablar con un asesor
+            </a>
           </div>
+          <div className="hero-proof" aria-label="Beneficios principales">
+            <span>Selección curada</span>
+            <span>Retiro coordinado</span>
+            <span>Trade-In</span>
+          </div>
+        </div>
+
+        <div className="hero-visual" aria-hidden="true">
+          <div className="hero-image-frame">
+            <img src={heroDevice} alt="" />
+          </div>
+          <span className="hero-visual-note">Selected technology · XXI</span>
         </div>
       </div>
     </section>
   );
 }
-
-export default Hero;

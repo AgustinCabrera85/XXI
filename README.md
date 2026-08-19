@@ -1,159 +1,33 @@
-# XXI Miami Corp - iPhone Minimal Site
+# XXI Premium V14 — Local
 
-Sitio institucional minimalista para XXI Miami Corp, orientado a la venta de iPhones sin publicar precios ni stock.
+Iteración local del rediseño premium de XXI Miami Corp.
 
-## Características
-
-- React + Vite.
-- Componentes separados por sección.
-- Paleta clara: beige, blanco, marrón, gris y negro.
-- Logo integrado en header, footer y favicon.
-- Imagen horizontal integrada como encabezado / hero.
-- Texto institucional de XXI Miami Corp.
-- Sección de información útil con formas de pago, retiro y parte de pago.
-- Sección de modelos sin precios ni stock, agrupada por línea de iPhone, con variantes, almacenamiento, colores de referencia y consulta directa por WhatsApp.
-- Sección de contacto con WhatsApp, Instagram, email y lugar de retiro.
-- Widget flotante de WhatsApp.
-- Diseño responsive.
-
-## Estructura
-
-```txt
-src/
-  assets/
-    hero-header.jpg
-    xxi-logo.png
-  components/
-    About.jsx
-    Contact.jsx
-    Footer.jsx
-    Header.jsx
-    Hero.jsx
-    PurchaseInfo.jsx
-    ProductCard.jsx
-    ProductShowcase.jsx
-    WhatsAppWidget.jsx
-  data/
-    iphones.js
-    siteConfig.js
-  App.jsx
-  main.jsx
-  styles.css
-public/
-  favicon.png
-```
-
-## Instalación
+## Ejecutar
 
 ```bash
 npm install
 npm run dev
 ```
 
-Luego abrir la URL que muestra Vite, normalmente:
+Abrí la URL que muestre Vite (normalmente `http://localhost:5173`).
 
-```txt
-http://localhost:5173
-```
+## WhatsApp contextual
 
-## Configurar WhatsApp
+Los accesos a WhatsApp ahora precargan mensajes específicos según el punto desde el que contacta el cliente:
 
-Editar el archivo:
+- Hero / asesoramiento general.
+- Concierge.
+- Collection.
+- Cada familia de iPhone del catálogo (iPhone 17, 16, 15, etc.).
+- Comparación de modelos.
+- Private Pickup.
+- Medios de pago.
+- XXI Trade-In.
+- The XXI Experience.
+- Visit XXI / Puerto Madero.
 
-```txt
-src/data/siteConfig.js
-```
+El botón flotante también detecta el contenido que está en el centro del viewport y adapta automáticamente el mensaje a esa sección o modelo.
 
-Y reemplazar:
+## Nota
 
-```js
-whatsappPhone: "54911XXXXXXXX"
-```
-
-Por el número real en formato internacional, por ejemplo:
-
-```js
-whatsappPhone: "5491123456789"
-```
-
-También podés cambiar el mensaje inicial:
-
-```js
-whatsappMessage: "Hola, quiero consultar por modelos de iPhone."
-```
-
-## Configurar Instagram
-
-El Instagram se configura en `src/data/siteConfig.js`:
-
-```js
-instagramHandle: "Xxi.miamicorp_",
-instagramUrl: "https://www.instagram.com/xxi.miamicorp_/",
-```
-
-El link se muestra en la sección de contacto y en el footer.
-
-## Cambiar texto institucional
-
-El texto principal se edita en `src/data/siteConfig.js`:
-
-```js
-mainStatement:
-  "XXI Miami Corp no es solo un negocio, es el espacio donde transformamos la búsqueda de tu próximo iPhone en algo especial.",
-```
-
-## Configurar pagos, retiro y parte de pago
-
-Editar el archivo:
-
-```txt
-src/data/siteConfig.js
-```
-
-Ahí podés modificar:
-
-```js
-paymentMethods: ["Efectivo en pesos", "Dólar en mano", "Transferencia", "Tarjeta de crédito"],
-paymentNote: "No pedimos pago por adelantado.",
-location: "Juana Manso 1666, Puerto Madero",
-pickupHours: "Lunes a sábados de 10 a 19 hs",
-tradeInText: "Tomamos equipos en parte de pago del iPhone 12 en adelante.",
-```
-
-## Configurar modelos y colores
-
-Editar el archivo:
-
-```txt
-src/data/iphones.js
-```
-
-Ahí podés agregar, quitar o modificar líneas de iPhone, descripciones, variantes, almacenamiento y colores sin tocar el componente visual. Cada línea tiene un array `variants` con `name` y `storage`, y un array `colors` con `name` y `hex` para mostrar los circulitos de color.
-
-## Cambiar logo o imagen de encabezado
-
-Reemplazar estos archivos manteniendo el mismo nombre:
-
-```txt
-src/assets/xxi-logo.png
-src/assets/hero-header.jpg
-```
-
-## Nota legal / marca
-
-Este sitio usa referencias a iPhone solo para describir productos. Conviene evitar que el diseño parezca un sitio oficial de Apple, salvo que el cliente cuente con autorización correspondiente.
-
-
-## Imágenes de productos
-
-Las tarjetas de modelos usan imágenes PNG con fondo transparente en:
-
-```txt
-src/assets/products/
-```
-
-Los modelos, descripciones, colores e imagen asociada se configuran en:
-
-```txt
-src/data/iphones.js
-```
+El repositorio de GitHub no fue modificado. Este paquete es exclusivamente para trabajo local.
