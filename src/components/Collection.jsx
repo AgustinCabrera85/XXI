@@ -1,14 +1,15 @@
 import { Icon } from './Icons';
 import { whatsappMessages } from '../data/siteConfig';
-
-const assetBase = 'https://raw.githubusercontent.com/AgustinCabrera85/XXI/main/src/assets/products';
+import iphone17Pro from '../assets/products/iphone-17-pro-5-transparent.png';
+import iphone16ProMax from '../assets/products/iphone-16-promax-transparent.png';
+import iphone15ProMax from '../assets/products/iphone-15-promax-transparent.png';
 
 const featured = [
   {
     label: 'Latest',
     title: 'iPhone 17 Pro',
     copy: 'Performance sin compromisos.',
-    image: `${assetBase}/iphone-17-pro-5-transparent.png`,
+    image: iphone17Pro,
     className: 'warm',
     imageClass: 'product-17',
     imageStyle: {
@@ -25,7 +26,7 @@ const featured = [
     label: 'Essential',
     title: 'iPhone 17',
     copy: 'Esencial. Refinado. Todo lo que necesitás.',
-    image: `${assetBase}/iphone-16-promax-transparent.png`,
+    image: iphone16ProMax,
     className: 'soft',
     imageClass: 'product-16',
     imageStyle: {
@@ -42,7 +43,7 @@ const featured = [
     label: 'Selected',
     title: 'iPhone 15 / 14',
     copy: 'Tecnología que sigue rindiendo.',
-    image: `${assetBase}/iphone-15-promax-transparent.png`,
+    image: iphone15ProMax,
     className: 'dark',
     imageClass: 'product-15',
     imageStyle: {
