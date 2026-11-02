@@ -1,4 +1,4 @@
-# XXI Premium V14 — Local
+# XXI Premium 
 
 Iteración local del rediseño premium de XXI Miami Corp.
 
