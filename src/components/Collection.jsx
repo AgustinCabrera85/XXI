@@ -24,8 +24,8 @@ const featured = [
   },
   {
     label: 'Essential',
-    title: 'iPhone 17',
-    copy: 'Esencial. Refinado. Todo lo que necesitás.',
+    title: 'iPhone 16 Pro Max',
+    copy: 'Potencia Pro. Tecnología que sigue destacando.',
     image: iphone16ProMax,
     className: 'soft',
     imageClass: 'product-16',

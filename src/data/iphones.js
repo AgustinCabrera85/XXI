@@ -3,8 +3,9 @@ export const iphones = [
     id: "17",
     name: "iPhone 17",
     label: "Latest generation",
-    description: "La generación más reciente, con alternativas Standard, Air, Pro y Pro Max.",
+    description: "La generación más reciente, con opciones 17e, estándar, Air, Pro y Pro Max.",
     variants: [
+      "iPhone 17e · 256 / 512 GB",
       "iPhone 17 · 256 / 512 GB",
       "iPhone 17 Air · 256 / 512 GB / 1 TB",
       "iPhone 17 Pro · 256 / 512 GB / 1 TB",
@@ -15,8 +16,9 @@ export const iphones = [
     id: "16",
     name: "iPhone 16",
     label: "Essential",
-    description: "Una familia actual, refinada y con excelente equilibrio entre rendimiento y cámara.",
+    description: "Una familia actual, con opciones 16e, estándar, Plus, Pro y Pro Max.",
     variants: [
+      "iPhone 16e · 128 / 256 / 512 GB",
       "iPhone 16 / 16 Plus · 128 / 256 / 512 GB",
       "iPhone 16 Pro / Pro Max · 128 / 256 / 512 GB / 1 TB",
     ],

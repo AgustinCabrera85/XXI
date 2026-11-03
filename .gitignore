@@ -5,6 +5,9 @@ node_modules/
 dist/
 dist-ssr/
 
+# Local preview
+offline-preview.html
+
 # Local env files
 .env
 .env.*

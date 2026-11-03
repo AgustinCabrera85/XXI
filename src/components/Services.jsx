@@ -1,5 +1,5 @@
 import { Icon } from './Icons';
-import { whatsappMessages, whatsappUrl } from '../data/siteConfig';
+import { siteConfig, whatsappMessages, whatsappUrl } from '../data/siteConfig';
 
 const services = [
   {
@@ -26,7 +26,7 @@ const services = [
     n: '03',
     icon: 'refresh',
     title: 'XXI Trade-In',
-    text: 'Tomamos tu iPhone desde el 12 en adelante como parte de pago.',
+    text: siteConfig.tradeInText,
     link: whatsappUrl(whatsappMessages.tradeIn),
     linkText: 'Cotizar mi iPhone',
     external: true,

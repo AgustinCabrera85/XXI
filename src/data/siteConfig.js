@@ -9,7 +9,7 @@ export const siteConfig = {
   location: "Juana Manso 1666, Puerto Madero",
   pickupHours: "Lunes a sábados · 10 a 19 hs",
   paymentMethods: "Efectivo, dólares, transferencia y tarjeta de crédito",
-  tradeInText: "Tomamos equipos desde iPhone 12 en adelante como parte de pago.",
+  tradeInText: "Tomamos tu iPhone desde el 13 en adelante como parte de pago.",
 };
 
 export const whatsappMessages = {
